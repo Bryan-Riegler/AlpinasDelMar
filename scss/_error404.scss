@@ -1,0 +1,59 @@
+.mainError{
+    height: 69.5vh;
+    .contenedorError{
+        @include flexbox (space-evenly,center);
+        flex-wrap: wrap;
+        padding-top: 15vh;
+        .contErrorImg{
+            .errorImg{
+                width:40vh;
+            }
+        }
+        .conth1Error{
+            width: 40%;
+            .error{
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
+        
+    }
+    .botonesError{
+        @include flexbox (center,center);
+        font-size: 2rem;
+        margin-top: 4vh;
+        .volverInicio{
+            margin-right: 4vh;
+            padding-top:1vh;
+            &:hover{
+                text-decoration: underline;
+                -webkit-transform:scale(1.1);transform:scale(1.1);
+            }
+        }
+        .reporte{
+            &:hover{
+                text-decoration: underline;
+                -webkit-transform:scale(1.1);transform:scale(1.1);
+            }
+        }
+    }
+
+}
+@media (max-width: 768px){
+    .mainError{
+        height: 66.4vh;
+        .contenedorError{
+            flex-direction: column;
+            .contErrorImg{
+                .errorImg{
+                    width: 25vh;
+                }
+            }
+            .conth1Error{
+                .error{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.subTitulo{
+    font-size: 3rem;
+    margin: 2vh;
+    text-shadow: map-get($map-shadows , shadow1);
+}
+.mapa{
+    position:relative;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: map-get($map-shadows ,shadow3);
+    width: 70vh;
+    height: 45vh;
+}
+.cord{
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 2rem;
+}
+@media (max-width: 768px){
+    .mapa{
+        width: 90%;
+    }
+}

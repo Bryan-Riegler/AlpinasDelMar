@@ -1,0 +1,32 @@
+.contenedorImagen{
+    @include flexbox (center,center);
+    flex-wrap: wrap;
+    gap:3vh;
+    font-size: 1.5rem;
+    
+    .contenedorImagen__imagenInfo{
+        text-align: center;
+        padding: 10px;
+        background-color: $color3;
+        border-radius: 15px;
+        box-shadow: map-get($map-shadows, shadow2);
+        transition: .3s;
+        
+    }
+    & :hover:not(img){
+        -webkit-transform:scale(1.1);transform:scale(1.1);
+    }
+    .contenedorImagen__imagenInfo img{
+        height: 40vh;
+        width: 50vh;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 768px){
+    .contenedorImagen{
+        & :hover:not(img){
+            -webkit-transform:scale(1);transform:scale(1);
+        }
+    }
+}

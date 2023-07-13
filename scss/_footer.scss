@@ -1,0 +1,32 @@
+.footer{
+    height: 100%;
+    text-align: center; 
+    font-size:2rem;
+    background-color: $color2;
+    .contenedorFooter{
+        width: 50%;
+        .icono{
+            text-decoration: none;
+            text-align:center;
+            font-size: 6rem;
+            text-shadow: map-get($map-shadows,shadow6);
+            border-radius:100px ;
+            align-items: center;
+            &:hover{
+                -webkit-transform:scale(1.1);transform:scale(1.1);
+            }
+        }
+    }    
+}
+@media (max-width: 768px){
+    .footer{
+        font-size: 1.5rem;
+        .contenedorFooter{
+            width: auto;
+            .icono{
+                font-size: 4rem;
+            }
+        }
+        
+    }
+}

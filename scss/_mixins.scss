@@ -1,0 +1,11 @@
+@mixin flexbox ($justificacion,$alineacion,$direccion:row){
+    display: flex;
+    justify-content: $justificacion ;
+    align-items: $alineacion;
+    flex-direction: $direccion;
+}
+@mixin bg-image ($imagen,$tamano,$repetir:no-repeat){
+    background-image:$imagen;
+    background-size:$tamano;
+    background-repeat: $repetir;
+}

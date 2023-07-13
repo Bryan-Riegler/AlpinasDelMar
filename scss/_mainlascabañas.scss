@@ -1,0 +1,39 @@
+.conoceLasCabañas1{
+    display: map-get($flex,flex);
+    flex-direction: map-get($flex , column );
+    gap:2vh;
+}
+.imagenC{
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 23px;
+}
+.conoceLasCabañas{
+    @include flexbox (space-around,center,column);
+    flex-wrap: wrap;
+    .equipamiento{
+        text-align: left;
+        font-size: 3rem;
+    }
+    .conoceLasCabañas__listaEquip{
+        font-size: 2.5rem;
+        list-style: none;
+        justify-content: left;
+        .iconoLista{
+            width: 4vh;
+            vertical-align: middle;
+            
+        }
+        .conoceLasCabañas__listaEquip__cocina{
+            list-style:inside;
+            font-size:2rem ;
+            margin-left: 7%;
+        }
+    }
+}
+@media (max-width: 768px){
+    .intro{
+        text-align:left ;
+        font-size: 2rem;
+    }
+}

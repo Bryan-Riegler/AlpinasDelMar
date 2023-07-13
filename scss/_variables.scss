@@ -1,0 +1,22 @@
+$color1:#FFF7D9;
+$color2:#d6d1bc;
+$color3:#EFE7C9;
+$color4:#f3e7b7;
+
+$flex:(
+    flex: flex,
+    row: row,
+    column: column,
+    space-around: space-around,
+    space-between: space-between,
+    space-evenly: space-evenly,
+    space-center: center
+);
+$map-shadows:(
+    shadow1:0px 0px 1px #000000,
+    shadow2:0px 0px 2px #000000,
+    shadow3:0px 0px 5px #000000,
+    shadow4:0px 5px 4px #636262,
+    shadow5:0px 5px 4px #818181,
+    shadow6:1px 0px 2px #000000
+);

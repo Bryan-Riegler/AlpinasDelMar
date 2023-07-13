@@ -1,0 +1,61 @@
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form__legendForm{
+        font-size:2.2vh;
+    }
+    .formulario{
+    
+        width: 50%;
+        border-radius: 12px;
+        @include flexbox (center,center,column);
+        .campo{
+            width: 50%;
+            padding: 1.5vh;
+            margin: 2vh;
+            font-size: 1.3rem;
+            border-radius: 7px;
+            background-color: $color3;
+            box-shadow: map-get($map-shadows , shadow2);
+            text-align: center;
+        }
+        .labelForm{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+        .boton{
+            width: 50%;
+            padding: 2vh;
+            margin: 1vh;
+            font-size: 1.5rem;
+            border-radius: 7px;
+            background-color: $color3;
+            box-shadow: map-get($map-shadows , shadow2);
+        }
+        .boton:hover{
+            -webkit-transform:scale(1.1);transform:scale(1.1);
+        }
+    }
+}
+.horarios{
+    text-align: center;
+    font-size: 2rem;
+}
+@media (max-width: 768px){
+    .form{
+        .formulario{
+            .campo{
+                width: 100%;
+            }
+            .botones{
+                flex-direction: row;
+                .boton{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
